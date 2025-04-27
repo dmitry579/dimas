@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<h1>{{ ad.title }}</h1>
+<p>{{ ad.description }}</p>
+<p>Цена: {{ ad.price }}</p>
+<p>Категория: {{ ad.category.name }}</p>
+<p>Продавец: {{ ad.seller.username }}</p>
+{% if ad.image %}
+    <img src="{{ ad.image.url }}" alt="{{ ad.title }}">
+{% endif %}
+
+</body>
+</html>
